@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", sans-serif;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.container-clock {
+    align-items: center;
+    background-color: #181536;
+    border-radius: 10px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    color: #ffffffee;
+    text-shadow: 0 0 5px #fff,
+        0 0 5px #fff,
+        0 0 10px #000,
+        0 0 15px rgb(255, 255, 255, 0.4),
+        0 0 20px rgba(255, 255, 255, 0.5),
+        0 0 25px rgba(255, 255, 255, 0.8),
+        0 0 30px rgb(255, 255, 255, 0.9),
+        0 0 80px rgb(255, 255, 255);
+    box-shadow: 0 0 10px #181536,
+        0 0 20px #181536,
+        0 0 30px #181536,
+        0 0 40px #181536,
+        0 0 80px #181536
+        ;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .container-clock {
+        padding: 25px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+}
